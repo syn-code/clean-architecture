@@ -48,7 +48,7 @@ class SendUpgradeCouponToNewMonthlySubscribers extends Command
             })->pluck('email');
 
         $this->info(
-            "Finished sent upgrade discounts to: " .
+            "Finished sent upgrade discounts to:  " .
             $emails->implode(', ')
         );
     }
