@@ -53,7 +53,7 @@ class SendUpgradeCouponToNewMonthlySubscribers extends Command
         );
     }
 
-    private function makeCoupon()
+    private function makeCoupon(): Coupon
     {
         return CouponFactory::generate([
            'code' => Str::random(25),
